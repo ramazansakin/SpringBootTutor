@@ -1,9 +1,10 @@
- # Burada kullanılan annotationları açıklamaya çalışacağım. Bunu ilerleyen projelerde de her karşılaştığımız yeni annotationlar içinde 
+# Burada kullanılan annotationları açıklamaya çalışacağım. Bunu ilerleyen projelerde de her karşılaştığımız yeni annotationlar içinde 
 açıklamaya çalışacağım. README.md dosyasında da anlattığım gibi Spring-Boot annotation based configuration ı ağırlıklı olarak kullandığı
 için kullandığımız annotationların nerede ,nasıl ve niçin kullandığımızı bilmemiz önemli olacak. Projede HelloWorldService.java olarak 
 bir service de eklenmiş ama ben kullanmadım. İsterseniz o service i kullanarak da Hello World ve ya istediğiniz bir şey web sayfasına 
 yazdırabilirsiniz.
 
+_____________________________________________
 ## @Configuration
  Bean lerin tanımlanmış olduğu class lar için kullanılır. Bu arada Bean ; Spring framework ünde iş yapan parçacıkları belirtmede kullanılan
 annotation dır.(@Bean)
@@ -31,6 +32,5 @@ _____________________________________________
 belirtmek için kullanılır.
 
 _____________________________________________
-@Value
+## @Value
 Bu annotation field ların ve ya parametrelerin başına getirilerek default değer atamayabilemk için kullanılır. 
-
