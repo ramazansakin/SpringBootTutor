@@ -1,0 +1,36 @@
+ # Burada kullanılan annotationları açıklamaya çalışacağım. Bunu ilerleyen projelerde de her karşılaştığımız yeni annotationlar içinde 
+açıklamaya çalışacağım. README.md dosyasında da anlattığım gibi Spring-Boot annotation based configuration ı ağırlıklı olarak kullandığı
+için kullandığımız annotationların nerede ,nasıl ve niçin kullandığımızı bilmemiz önemli olacak. Projede HelloWorldService.java olarak 
+bir service de eklenmiş ama ben kullanmadım. İsterseniz o service i kullanarak da Hello World ve ya istediğiniz bir şey web sayfasına 
+yazdırabilirsiniz.
+
+## @Configuration
+ Bean lerin tanımlanmış olduğu class lar için kullanılır. Bu arada Bean ; Spring framework ünde iş yapan parçacıkları belirtmede kullanılan
+annotation dır.(@Bean)
+
+_____________________________________________
+## @EnableAutoConfiguration
+  Bu annotation genellikle projeyi çalıştırdığımız main methodunun olduğu class ın başına koyulur. Projenin base package nin 
+bulunduğu classpath ini vererek bean ve property leri görmesini sağlar. 
+
+
+_____________________________________________
+## @RequestMapping("/")
+  Projemizi çalıştırdıktan sonra browser ımıza localhost:8080 yada 127.0.0.1:8080 yazdığımızda bu adres ile server a bir request
+göndermiş oluruz. göndermiş olduğumuz bu request serverda ServletDispatcher , aynı zamanda front controller denilen yapı tarafından
+karşılanır. Bu servlet dispatcher bu requesti HandlerMapping ile tanımladığımız mapping lerden giderek gerekli controller a ordan da
+ilgili method a düşmesini sağlar. Bu path bu annotation ile belirlenir. 
+
+_____________________________________________
+## @ResponseBody
+  Burada dönecek olan response un tipi belirlenir. Genelde JSON ve XML şeklinde response dönülür.
+  
+_____________________________________________
+## @Component
+  Bu annotation class ların başına getirilerek classs ın spring componenti olacağını yani bean olarak run time da create edileceğini
+belirtmek için kullanılır.
+
+_____________________________________________
+@Value
+Bu annotation field ların ve ya parametrelerin başına getirilerek default değer atamayabilemk için kullanılır. 
+
