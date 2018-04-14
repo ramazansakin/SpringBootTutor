@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @EnableAutoConfiguration
 public class SampleSimpleApplication {
 
+	// Default url mapping : localhost:8080/
 	@RequestMapping("/")
 	@ResponseBody
 	String home() {
