@@ -19,7 +19,7 @@ geldiği için spring ile yaptığımız herşeyi (third-party kütüphanelerin 
 - Embedded Servlet Container 'ı sayesinde tek tıkla production seviyesine uygulamayı taşıyabilme
 - Xml Konfigürasyonlarına ihtiyaç duymaması (Annotation lar ile bütün konfigürasyonlarınızı yapabilirsiniz.)
 
-  Bu repository de size başlangıç seviyesindedeki Spring-boot uygulamalarını karşılaşabileceğiniz hatalr ile beraber anlatmaya çalışsacağım.
-Yanlış gördüğünüz yerleri düzeltebilirsiniz :)
+  Bu repository de size başlangıç seviyesindedeki Spring-boot uygulamalarını karşılaşabileceğiniz hatalar ile beraber anlatmaya çalışacağım. Yanlış gördüğünüz yerleri düzeltebilirsiniz . Eğer burda karşılaşılmayan bir hata ile karşılaşırsanızda mail adresimden irtibata geçerseniz yardımcı olmaya çalışırım.
+
 
 Teşekkürler.
