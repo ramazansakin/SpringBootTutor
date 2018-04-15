@@ -1,0 +1,24 @@
+# Api Test
+
+  SpringBootSample_2 de yazmış olduğumuz service lerimizi(api) test edelim :
+(Postam ve ya SoapUI kullanabilirsiniz. Postman restfull service ler için daha kolay bir kullanıma ve anlaşılır bir arayüze 
+sahip oldugu için onu tercih ediyorum.) Burada hepsinin anlatımını ve url lerinin verdim ve aynı dizin altından postman den yapmıs oldugum
+test lere bakarak siz de test edebilirsiniz.
+
+1 - http://localhost:8080/SpringBootRestSampleApi/servicebasepath/user/ : Tüm oluşturduğumuz statik kullanıcıları getirir. Header kısmınıda istediğiniz gibi
+değiştirebilirsiniz. 
+
+2 - http://localhost:8080/SpringBootRestSampleApi/servicebasepath/user/2 : Verilen id ile eşleşen kullanıcıyı getirir.
+
+3 - http://localhost:8080/SpringBootRestSampleApi/servicebasepath/user/ : POST metodu ile çağırım yapıyoruz ve body imize JSON
+objesi olacak şekilde bir kullanıcı tanımlayarak gönderiyoruz. Sonrasında kullanıcının eklenip eklenmediğini görmek için tekrar 
+ilk kullandığımız tüm kullanıcıları getir metodunu kullanabiliriz.
+
+4 - http://localhost:8080/SpringBootRestSampleApi/servicebasepath/user/2 : PUT metodunu kullanarak çağırım yapıyoruz. Güncellemek 
+istediğimiz kullanıcının id sinide url in sonuna pathParam olarak ekleyip gönderiyoruz.
+
+5 - http://localhost:8080/SpringBootRestSampleApi/servicebasepath/user/3 : DELETE metodunu kullanarak çağırım yapıyoruz. Silmek 
+istediğimiz kullanıcının id sinide url in sonuna pathParam olarak ekleyip gönderiyoruz. Bu api için hatalı bir id vererek denedim
+ve aldığım sonucuda screenshot larda paylaştım.
+
+Yukarıdaki leri örnek olarak verdim diğerlerini de aynı mantık ile deneyip sonuçlarını test edebilirsiniz.
